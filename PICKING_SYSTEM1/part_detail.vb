@@ -15,6 +15,7 @@ Imports Bt
 Imports System.Data.SqlClient
 
 Public Class part_detail
+
     Inherits Form
     Public myConn As SqlConnection
     Public myConn_Resive As SqlConnection
@@ -51,6 +52,7 @@ Public Class part_detail
     Public check_po_lot As String = "NODATA"
     Public id_pick_log_supply As String = "NODATA"
     Dim j As Integer = 0
+
     Dim count_update_fw As Integer = 0
     Dim count_scan As Integer = 0
     Dim fa_use_total As Integer = 0
@@ -1024,21 +1026,21 @@ LOOP_INSERT:
                 Return True
             End If
             'If check_com_flg = "0" Then
+            Module1.check_count = 0
+            If RE_check_qr() = 0 Then 'ถ้า 0 คือ insert ได้ 1 insert ไม่ได้'
+                'inset_check_qr_part()
+                bool_check_scan = "no_ever"
                 Module1.check_count = 0
-                If RE_check_qr() = 0 Then 'ถ้า 0 คือ insert ได้ 1 insert ไม่ได้'
-                    'inset_check_qr_part()
-                    bool_check_scan = "no_ever"
-                    Module1.check_count = 0
                 ' Return False
                 Return 0 'ชั่วคราว'
-                Else
-                    'bool_check_scan = "no_ever" 'ชั่วคราว'
-                    'Module1.check_count = 0 'ชั่วคราว'
-                    bool_check_scan = "ever" 'จริง'
-                    Module1.check_count = 1 'จริง'
-                    Return True
-                End If
-                'update_qty_sup_scan_pick_detail(id, qty)
+            Else
+                'bool_check_scan = "no_ever" 'ชั่วคราว'
+                'Module1.check_count = 0 'ชั่วคราว'
+                bool_check_scan = "ever" 'จริง'
+                Module1.check_count = 1 'จริง'
+                Return True
+            End If
+            'update_qty_sup_scan_pick_detail(id, qty)
             'Return 0
             'End If
             If count = 0 Then
@@ -1335,7 +1337,7 @@ LOOP_INSERT:
             Dim pin1 As StringBuilder = New StringBuilder("0000")
 
             Dim pinlen1 As UInt32 = CType(pin1.Length, UInt32)
-            Bluetooth_Print_MB200i(stInfoSet, pin, pinlen1, part_no_detail, Module1.past_name, wi_code, qty_detail, line_detail, user_detail, now_date_detail, now_time_detail, qrdetailSupply)
+            Bluetooth_Print_MB200i(stInfoSet, pin, pinlen1, part_no_detail, Module1.past_name, wi_code, text_tmp.Text, line_detail, user_detail, now_date_detail, now_time_detail, qrdetailSupply)
         End If
 remain_seq_FW:
         If Bluetooth_Connect_MB200i(stInfoSet, pin, pinlen) = True Then

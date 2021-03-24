@@ -24,6 +24,7 @@ Partial Public Class Select_Line
         Dim ListViewItem1 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem
         Me.Panel1 = New System.Windows.Forms.Panel
         Me.Panel2 = New System.Windows.Forms.Panel
+        Me.Day = New System.Windows.Forms.ComboBox
         Me.Panel9 = New System.Windows.Forms.Panel
         Me.Panel10 = New System.Windows.Forms.Panel
         Me.Button3 = New System.Windows.Forms.Button
@@ -97,6 +98,7 @@ Partial Public Class Select_Line
         'Panel2
         '
         Me.Panel2.BackColor = System.Drawing.Color.DarkOrange
+        Me.Panel2.Controls.Add(Me.Day)
         Me.Panel2.Controls.Add(Me.Panel9)
         Me.Panel2.Controls.Add(Me.Panel8)
         Me.Panel2.Controls.Add(Me.PictureBox9)
@@ -113,6 +115,13 @@ Partial Public Class Select_Line
         Me.Panel2.Controls.Add(Me.Label8)
         resources.ApplyResources(Me.Panel2, "Panel2")
         Me.Panel2.Name = "Panel2"
+        '
+        'Day
+        '
+        Me.Day.BackColor = System.Drawing.Color.Bisque
+        resources.ApplyResources(Me.Day, "Day")
+        Me.Day.ForeColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.Day.Name = "Day"
         '
         'Panel9
         '
@@ -471,4 +480,5 @@ Partial Public Class Select_Line
     Friend WithEvents Panel13 As System.Windows.Forms.Panel
     Friend WithEvents Panel12 As System.Windows.Forms.Panel
     Friend WithEvents Button3 As System.Windows.Forms.Button
+    Friend WithEvents Day As System.Windows.Forms.ComboBox
 End Class

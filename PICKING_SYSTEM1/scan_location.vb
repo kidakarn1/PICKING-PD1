@@ -143,53 +143,15 @@ m:
         Select Case e.KeyCode
             Case System.Windows.Forms.Keys.Enter
                 Try
-                    Dim sub_box = text_box_location.Text
-                    Dim loc_val As String = Location.Text.Substring(11)
                     Dim ps = Part_Selected.Text.Substring(16)
                     Module1.past_numer = ps
-                    Dim length_of_text_box As Integer
-                    length_of_text_box = (ps.Length() + loc_val.Length()) + 6
-                    'MsgBox(length_of_text_box)
-                    'MsgBox(sub_box.Length())
-                    Dim sub_box_length As Integer
-                    sub_box_length = sub_box.Length() + 6
-                    a = (length_of_text_box = sub_box_length)
-                    Dim val_box = sub_box.Split(" ")
-                    Dim part = val_box(0)
-                    Dim loca = val_box(6)
-                    Dim default_length As Integer = Len(ps & "      " & loc_val)
-                    Dim L_location As Integer = Len(text_box_location.Text)
-                    If default_length >= L_location Or default_length <= L_location Then
-                        If part = ps Then
-                            If loca = loc_val Then
-                                Timer1.Enabled = True
-                                Panel2.Visible = True
-                                If ml = 4 Then
-                                    check()
-                                End If
-
-
-                                'Button1.Show()
-                                check_scan = "OK"
-                            Else
-                                text_box_location.Text = ""
-                                Button1.Hide()
-                                check_scan = "NO_OK"
-                            End If
-                        Else
-                            text_box_location.Text = ""
-                            Button1.Hide()
-                            check_scan = "NO_OK"
-                        End If
-                        If check_scan = "NO_OK" Then
-                            fo.Focus()
-                            PictureBox3.Visible = True
-                            Button1.Visible = False
-                            btn_ok.Visible = False
-                            text_box_location.Visible = False
-                        End If
+                    Timer1.Enabled = True
+                    Panel2.Visible = True
+                    If ml = 4 Then
+                        check()
                     End If
-                    'End If
+                    'Button1.Show()
+                    check_scan = "OK"
                 Catch ex As Exception
                     ' MsgBox("scan faill")
                 End Try

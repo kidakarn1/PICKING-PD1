@@ -147,7 +147,31 @@
     <value>Panel2</value>
   </data>
   <data name="&gt;&gt;Button1.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
+  </data>
+  <data name="Day.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 20pt, style=Bold</value>
+  </data>
+  <data name="Day.Location" type="System.Drawing.Point, System.Drawing">
+    <value>409, 11</value>
+  </data>
+  <data name="Day.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 39</value>
+  </data>
+  <data name="Day.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="&gt;&gt;Day.Name" xml:space="preserve">
+    <value>Day</value>
+  </data>
+  <data name="&gt;&gt;Day.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ComboBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Day.Parent" xml:space="preserve">
+    <value>Panel2</value>
+  </data>
+  <data name="&gt;&gt;Day.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="Button3.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 18pt</value>
@@ -345,10 +369,10 @@
     <value>0</value>
   </data>
   <data name="Panel9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 81</value>
+    <value>13, 126</value>
   </data>
   <data name="Panel9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>462, 503</value>
+    <value>462, 466</value>
   </data>
   <data name="&gt;&gt;Panel9.Name" xml:space="preserve">
     <value>Panel9</value>
@@ -360,7 +384,7 @@
     <value>Panel2</value>
   </data>
   <data name="&gt;&gt;Panel9.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="Label10.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 20pt, style=Bold</value>
@@ -2162,7 +2186,7 @@
     <value>Panel2</value>
   </data>
   <data name="&gt;&gt;Panel8.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="PictureBox9.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -9937,7 +9961,7 @@
     <value>Panel2</value>
   </data>
   <data name="&gt;&gt;PictureBox9.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="btn_ok.Font" type="System.Drawing.Font, System.Drawing">
     <value>Yu Gothic UI, 18pt, style=Bold</value>
@@ -9964,7 +9988,7 @@
     <value>Panel2</value>
   </data>
   <data name="&gt;&gt;btn_ok.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="Label3.Font" type="System.Drawing.Font, System.Drawing">
     <value>FC Home, 16pt, style=Bold</value>
@@ -9991,7 +10015,7 @@
     <value>Panel2</value>
   </data>
   <data name="&gt;&gt;Label3.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="ColumnHeader1.Text" xml:space="preserve">
     <value>PART NO.</value>
@@ -10036,7 +10060,7 @@
     <value>Panel2</value>
   </data>
   <data name="&gt;&gt;Line_list_view.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="Label2.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 14pt, style=Bold</value>
@@ -10063,7 +10087,7 @@
     <value>Panel2</value>
   </data>
   <data name="&gt;&gt;Label2.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="Lb2.Font" type="System.Drawing.Font, System.Drawing">
     <value>Yu Gothic UI, 28pt, style=Bold</value>
@@ -10087,7 +10111,7 @@
     <value>Panel2</value>
   </data>
   <data name="&gt;&gt;Lb2.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="ComboBox1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 20pt, style=Bold</value>
@@ -10111,7 +10135,7 @@
     <value>Panel2</value>
   </data>
   <data name="&gt;&gt;ComboBox1.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="Label1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 14pt, style=Bold</value>
@@ -10138,16 +10162,16 @@
     <value>Panel2</value>
   </data>
   <data name="&gt;&gt;Label1.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
   <data name="Line_PD.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 16pt, style=Bold</value>
   </data>
   <data name="Line_PD.Location" type="System.Drawing.Point, System.Drawing">
-    <value>228, 41</value>
+    <value>221, 41</value>
   </data>
   <data name="Line_PD.Size" type="System.Drawing.Size, System.Drawing">
-    <value>240, 30</value>
+    <value>247, 30</value>
   </data>
   <data name="Line_PD.Text" xml:space="preserve">
     <value>PD:</value>
@@ -10162,16 +10186,16 @@
     <value>Panel2</value>
   </data>
   <data name="&gt;&gt;Line_PD.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>12</value>
   </data>
   <data name="Line_Emp_cd.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 16pt, style=Bold</value>
   </data>
   <data name="Line_Emp_cd.Location" type="System.Drawing.Point, System.Drawing">
-    <value>228, 11</value>
+    <value>221, 11</value>
   </data>
   <data name="Line_Emp_cd.Size" type="System.Drawing.Size, System.Drawing">
-    <value>240, 30</value>
+    <value>247, 30</value>
   </data>
   <data name="Line_Emp_cd.Text" xml:space="preserve">
     <value>Emp CD :</value>
@@ -10186,7 +10210,7 @@
     <value>Panel2</value>
   </data>
   <data name="&gt;&gt;Line_Emp_cd.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>13</value>
   </data>
   <data name="Label8.Font" type="System.Drawing.Font, System.Drawing">
     <value>Arial, 16pt, style=Bold</value>
@@ -10210,7 +10234,7 @@
     <value>Panel2</value>
   </data>
   <data name="&gt;&gt;Label8.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>14</value>
   </data>
   <data name="Panel2.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 3</value>

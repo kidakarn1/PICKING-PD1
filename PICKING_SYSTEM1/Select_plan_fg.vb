@@ -247,7 +247,7 @@ NEXT_END_FW:
                 GoTo NEXT_END_WEB_POST
             End If 'กรณี มี LOT ที่ พอดีอันเดียว'
             If Module1.check_QTY > Lot_plus_qty.ToString Then
-                Module1.arr_pick_detail_po.Add(reader("PO").ToStriFng)
+                Module1.arr_pick_detail_po.Add(reader("PO").ToString)
                 Module1.arr_pick_detail_qty.Add(reader("QTY_OF_LOT").ToString)
                 Module1.arr_pick_detail_lot.Add(reader("LT").ToString)
                 RESULT_QTY = RESULT_QTY - reader("QTY_OF_LOT").ToString
